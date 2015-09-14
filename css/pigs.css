@@ -2,26 +2,82 @@ body {
     background-image: url("../images/cover.jpg");
     background-repeat: no-repeat;
     background-size: 100%;
+    font-family: Arial, Helvetica, sans-serif;
 }
 
-#content_container {
+#content-container {
     background-color: rgba(255, 255, 255, 0.85);
-    margin: 200px;
+    margin: 100px 200px;
     overflow: hidden;
 }
 
-#content_left {
+#content-left {
     float: left;
     width: 40%;
+    padding: 50px 0;
 }
 
-#content_right {
+#content-right {
     float: right;
     width: 60%;
+    padding: 50px 0;
 }
 
-#cover_image {
+#content-right div {
+    margin-right: 50px;
+}
+
+#cover-image {
     display: block;
     margin: auto;
-    padding: 100px 0;
+}
+
+#album-title {
+    font-family: 'Abril Fatface', serif;
+    font-size: 32px;
+}
+
+#release-date {
+    padding: 10px 0;
+    font-size: 14px;
+}
+
+#release-date-label {
+    font-weight: bold;
+}
+
+.song {
+    font-family: 'Abril Fatface', serif;
+    padding: 5px 0;
+}
+
+.song-time {
+    font-size: 14px;
+}
+
+a {
+    color: #700;
+    text-decoration: none;
+}
+
+a:hover {
+    color: #c44;
+}
+
+#download-all {
+    padding-top: 15px;
+    font-size: 16px;
+    font-weight: bold;
+}
+
+#download-all-file-extension {
+    font-weight: bold;
+    font-size: 14px;
+}
+
+#art-credit {
+    padding-top: 15px;
+    text-align: center;
+    font-style: italic;
+    font-size: 12px;
 }
