@@ -75,9 +75,46 @@ a:hover {
     font-size: 14px;
 }
 
-#art-credit {
-    padding-top: 15px;
-    text-align: center;
+#song-list {
+    list-style-position: inside;
+    padding-left: 0;
+}
+
+#content-right .song-details {
+    margin: 15px 0 20px 30px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 14px;
+    border: 1px solid #933;
+    border-radius: 7px;
+    background-color: rgba(135, 15, 15, 0.7);
+}
+
+.song-details table,
+.song-details audio {
+    margin-left: 10px;
+}
+
+.song-details .key {
+    color: #eee;
     font-style: italic;
-    font-size: 12px;
+    font-weight: bold;
+    font-size: 14px;
+    width: 25%;
+    height: 30px;
+}
+
+.song-details .value {
+    color: #eee;
+    font-style: normal;
+    font-size: 14px;
+}
+
+.samples-list {
+    padding-left: 0;
+    list-style-type: none;
+}
+
+.song-details audio {
+    padding: 20px 0;
+    width: 100%;
 }

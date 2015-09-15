@@ -4,6 +4,7 @@
         <title>Pigs in the Parlor (2005)</title>
         <link rel="stylesheet" type="text/css" href="css/pigs.css">
         <script src="js/jquery-2.1.4.min.js"></script>
+        <script src="js/jquery.simplemodal.1.4.4.min.js"></script>
         <script src="js/pigs.js"></script>
     </head>
 
@@ -11,10 +12,6 @@
         <div id="content-container">
             <div id="content-left">
                 <img id="cover-image" src="images/cover.jpg" width="250"/>
-
-                <div id="art-credit">
-                    Art by Gus Fink.
-                </div>
             </div>
 
             <div id="content-right">
@@ -23,11 +20,13 @@
                 </div>
 
                 <div id="release-date">
-                    <span id="release-date-label">Released: </span>Spring, 2005
+                    <span id="release-date-label">Released: </span>May, 2005
                 </div>
 
                 <div id="album-description">
-                    Te vim consequuntur concludaturque. Eum iuvaret tibique pertinacia ne, nihil facete molestie his in. Mea verear adolescens id, eum in falli deserunt. At quo omnium labitur phaedrum, vidit referrentur mediocritatem in duo. Ex usu omnis quaeque volutpat, ad summo ubique pri. Mel eu brute disputando theophrastus, id pri volumus signiferumque.
+                    <p>Recorded digitally at home between September, 2000 and May, 2005.
+                       Sounds best with headphones in a quiet place--as does any music.</p>
+                    <p>Art by Gus Fink.</p>
                 </div>
 
                 <div id="download-all">
@@ -35,9 +34,42 @@
                 </div>
 
                 <div "song-container">
-                    <ol>
+                    <ol id="song-list">
                         <li class="song">
-                            <a href="songs/01_Hypothetical.mp3">Hypothetical</a> <span class="song-time">(4:54)</span>
+                            <!-- <a data-song-num="1" href="songs/01_Hypothetical.mp3">Hypothetical</a> <span class="song-time">(4:54)</span>-->
+                            <a class="song-title" data-song-num="1" href="javascript:openSongDetails(1);">Hypothetical</a>
+                            <div class="song-details" data-song-num="1">
+                                <table>
+                                    <tr>
+                                        <td class="key">Length:</td>
+                                        <td class="value">4:16</td>
+                                    </tr>
+                                    <tr>
+                                        <td class="key">Recorded:</td>
+                                        <td class="value">2000</td>
+                                    </tr>
+                                    <tr>
+                                        <td class="key">Written by:</td>
+                                        <td class="value">Tyler Hayes</td>
+                                    </tr>
+                                    <tr>
+                                        <td class="key">Samples:</td>
+                                        <td class="value">
+                                            <ul class="samples-list">
+                                                <li>David Bowie's "Five Years" (drums)</li>
+                                                <li>Pearl Jam's "Grievance" (drums)</li>
+                                                <li>Collective Soul's "Listen" (keyboard)</li>
+                                            </ul>
+                                        </td>
+                                    </tr>
+                                </table>
+
+                                <div class="audio-controller">
+                                    <audio controls>
+                                        <source src="songs/01_Hypothetical.mp3" type="audio/mpeg"/>
+                                    </audio>
+                                </div>
+                            </div>
                         </li>
                         <li class="song">
                             <a href="songs/02_You_Are_Not_Going_to_Win_This_War.mp3">You Are Not Going to Win This War</a> <span class="song-time">(4:09)</span>
