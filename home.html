@@ -4,7 +4,6 @@
         <title>Pigs in the Parlor (2005)</title>
         <link rel="stylesheet" type="text/css" href="css/pigs.css">
         <script src="js/jquery-2.1.4.min.js"></script>
-        <script src="js/jquery.simplemodal.1.4.4.min.js"></script>
         <script src="js/pigs.js"></script>
     </head>
 
@@ -36,8 +35,7 @@
                 <div "song-container">
                     <ol id="song-list">
                         <li class="song">
-                            <!-- <a data-song-num="1" href="songs/01_Hypothetical.mp3">Hypothetical</a> <span class="song-time">(4:54)</span>-->
-                            <a class="song-title" data-song-num="1" href="javascript:openSongDetails(1);">Hypothetical</a>
+                            <a class="song-title" href="javascript:openSongDetails(1);">Hypothetical</a>
                             <div class="song-details" data-song-num="1">
                                 <table>
                                     <tr>
@@ -56,9 +54,9 @@
                                         <td class="key">Samples:</td>
                                         <td class="value">
                                             <ul class="samples-list">
-                                                <li>David Bowie's "Five Years" (drums)</li>
-                                                <li>Pearl Jam's "Grievance" (drums)</li>
-                                                <li>Collective Soul's "Listen" (keyboard)</li>
+                                                <li><span class="sample-song-title">"Five Years"</span> by David Bowie</li>
+                                                <li><span class="sample-song-title">"Grievance"</span> by Pearl Jam</li>
+                                                <li><span class="sample-song-title">"Listen"</span> by Collective Soul</li>
                                             </ul>
                                         </td>
                                     </tr>
@@ -72,51 +70,471 @@
                             </div>
                         </li>
                         <li class="song">
-                            <a href="songs/02_You_Are_Not_Going_to_Win_This_War.mp3">You Are Not Going to Win This War</a> <span class="song-time">(4:09)</span>
+                            <a class="song-title" href="javascript:openSongDetails(2);">You Are Not Going to Win This War</a>
+                            <div class="song-details" data-song-num="2">
+                                <table>
+                                    <tr>
+                                        <td class="key">Length:</td>
+                                        <td class="value">4:18</td>
+                                    </tr>
+                                    <tr>
+                                        <td class="key">Recorded:</td>
+                                        <td class="value">2005</td>
+                                    </tr>
+                                    <tr>
+                                        <td class="key">Written by:</td>
+                                        <td class="value">Tyler Hayes</td>
+                                    </tr>
+                                    <tr>
+                                        <td class="key">Samples:</td>
+                                        <td class="value">
+                                            <ul class="samples-list">
+                                                <li><span class="sample-song-title">"Renegades of Funk"</span> by Rage Against the Machine</li>
+                                                <li><span class="sample-song-title">"I Need You Tonight"</span> by INXS</li>
+                                                <li><span class="sample-song-title">"Warning Sign"</span> by The Talking Heads</li>
+                                                <li><span class="sample-song-title">"Suspicion"</span> by R.E.M.</li>
+                                                <li><span class="sample-song-title">"Take Me to the River"</span> by The Talking Heads</li>
+                                                <li><span class="sample-song-title">"Go Let it Out"</span> by Oasis</li>
+                                                <li><span class="sample-song-title">"Superstition"</span> by Stevie Wonder</li>
+                                            </ul>
+                                        </td>
+                                    </tr>
+                                </table>
+
+                                <div class="audio-controller">
+                                    <audio controls>
+                                        <source src="songs/02_You_Are_Not_Going_to_Win_This_War.mp3" type="audio/mpeg"/>
+                                    </audio>
+                                </div>
+                            </div>
                         </li>
                         <li class="song">
-                            <a href="songs/03_The_Dust_in_Our_Robots.mp3">The Dust in Our Robots</a> <span class="song-time">(4:21)</span>
+                            <a class="song-title" href="javascript:openSongDetails(3);">The Dust in Our Robots</a>
+                            <div class="song-details" data-song-num="3">
+                                <table>
+                                    <tr>
+                                        <td class="key">Length:</td>
+                                        <td class="value">4:22</td>
+                                    </tr>
+                                    <tr>
+                                        <td class="key">Recorded:</td>
+                                        <td class="value">2001-2002</td>
+                                    </tr>
+                                    <tr>
+                                        <td class="key">Written by:</td>
+                                        <td class="value">Tyler Hayes</td>
+                                    </tr>
+                                    <tr>
+                                        <td class="key">Samples:</td>
+                                        <td class="value">
+                                            <ul class="samples-list">
+                                                <li><span class="sample-song-title">"Everything is Everything"</span> by Earth, Wind, and Fire</li>
+                                                <li><span class="sample-song-title">"Maybe Angels"</span> by Sheryl Crow</li>
+                                                <li><span class="sample-song-title">"Nightingale Song"</span> by Toad the Wet Sprocket"</li>
+                                                <li><span class="sample-song-title">"Hyperballad (Brodsky Quartet version)"</span> by Bjork</li>
+                                                <li><span class="sample-song-title">"Isobel (Deodato Mix)"</span> by Bjork</li>
+                                            </ul>
+                                        </td>
+                                    </tr>
+                                </table>
+
+                                <div class="audio-controller">
+                                    <audio controls>
+                                        <source src="songs/03_The_Dust_in_Our_Robots.mp3" type="audio/mpeg"/>
+                                    </audio>
+                                </div>
+                            </div>
                         </li>
                         <li class="song">
-                            <a href="songs/04_American_Pigs.mp3">American Pigs</a> <span class="song-time">(3:36)</span>
+                            <a class="song-title" href="javascript:openSongDetails(4);">American Pigs</a>
+                            <div class="song-details" data-song-num="4">
+                                <table>
+                                    <tr>
+                                        <td class="key">Length:</td>
+                                        <td class="value">3:36</td>
+                                    </tr>
+                                    <tr>
+                                        <td class="key">Recorded:</td>
+                                        <td class="value">2001-2003</td>
+                                    </tr>
+                                    <tr>
+                                        <td class="key">Written by:</td>
+                                        <td class="value">Tyler Hayes</td>
+                                    </tr>
+                                    <tr>
+                                        <td class="key">Samples:</td>
+                                        <td class="value">
+                                            <ul class="samples-list">
+                                                <li><span class="sample-song-title">"Fast as You Can"</span> by Fiona Apple</li>
+                                                <li><span class="sample-song-title">"Faces in Disguise"</span> by Sunny Day Real Estate</li>
+                                            </ul>
+                                        </td>
+                                    </tr>
+                                </table>
+
+                                <div class="audio-controller">
+                                    <audio controls>
+                                        <source src="songs/04_American_Pigs.mp3" type="audio/mpeg"/>
+                                    </audio>
+                                </div>
+                            </div>
                         </li>
                         <li class="song">
-                            <a href="songs/05_Living_Upstairs.mp3">Living Upstairs</a> <span class="song-time">(4:19)</span>
+                            <a class="song-title" href="javascript:openSongDetails(5);">Living Upstairs</a>
+                            <div class="song-details" data-song-num="5">
+                                <table>
+                                    <tr>
+                                        <td class="key">Length:</td>
+                                        <td class="value">4:04</td>
+                                    </tr>
+                                    <tr>
+                                        <td class="key">Recorded:</td>
+                                        <td class="value">2005</td>
+                                    </tr>
+                                    <tr>
+                                        <td class="key">Written by:</td>
+                                        <td class="value">Tyler Hayes</td>
+                                    </tr>
+                                    <tr>
+                                        <td class="key">Samples:</td>
+                                        <td class="value">
+                                            <ul class="samples-list">
+                                                <li><span class="sample-song-title">"Death of an Interior Decorator"</span> by Death Cab for Cutie</li>
+                                            </ul>
+                                        </td>
+                                    </tr>
+                                </table>
+
+                                <div class="audio-controller">
+                                    <audio controls>
+                                        <source src="songs/05_Living_Upstairs.mp3" type="audio/mpeg"/>
+                                    </audio>
+                                </div>
+                            </div>
                         </li>
                         <li class="song">
-                            <a href="songs/06_Right_Hand_Pull_Trigger_Left_Hand_Shrug_Shoulder.mp3">Right Hand Pull Trigger Left Hand Shrug Shoulder</a> <span class="song-time">(4:50)</span>
+                            <a class="song-title" href="javascript:openSongDetails(6);">Right Hand Pull Trigger Left Hand Shrug Shoulder</a>
+                            <div class="song-details" data-song-num="6">
+                                <table>
+                                    <tr>
+                                        <td class="key">Length:</td>
+                                        <td class="value">4:50</td>
+                                    </tr>
+                                    <tr>
+                                        <td class="key">Recorded:</td>
+                                        <td class="value">2003</td>
+                                    </tr>
+                                    <tr>
+                                        <td class="key">Written by:</td>
+                                        <td class="value">Tyler Hayes</td>
+                                    </tr>
+                                    <tr>
+                                        <td class="key">Samples:</td>
+                                        <td class="value">
+                                            <ul class="samples-list">
+                                                <li><span class="sample-song-title">"Join the Gang"</span> by David Bowie</li>
+                                                <li><span class="sample-song-title">"Precious Declaration"</span> by Collective Soul</li>
+                                            </ul>
+                                        </td>
+                                    </tr>
+                                </table>
+
+                                <div class="audio-controller">
+                                    <audio controls>
+                                        <source src="songs/06_Right_Hand_Pull_Trigger_Left_Hand_Shrug_Shoulder.mp3" type="audio/mpeg"/>
+                                    </audio>
+                                </div>
+                            </div>
                         </li>
                         <li class="song">
-                            <a href="songs/07_One_More.mp3">One More</a> <span class="song-time">(7:03)</span>
+                            <a class="song-title" href="javascript:openSongDetails(7);">One More</a>
+                            <div class="song-details" data-song-num="7">
+                                <table>
+                                    <tr>
+                                        <td class="key">Length:</td>
+                                        <td class="value">7:04</td>
+                                    </tr>
+                                    <tr>
+                                        <td class="key">Recorded:</td>
+                                        <td class="value">2004</td>
+                                    </tr>
+                                    <tr>
+                                        <td class="key">Written by:</td>
+                                        <td class="value">Tyler Hayes/Paul Mirati</td>
+                                    </tr>
+                                    <tr>
+                                        <td class="key">Trumpets:</td>
+                                        <td class="value">Nate Purscelley</td>
+                                    </tr>
+                                </table>
+
+                                <div class="audio-controller">
+                                    <audio controls>
+                                        <source src="songs/07_One_More.mp3" type="audio/mpeg"/>
+                                    </audio>
+                                </div>
+                            </div>
                         </li>
                         <li class="song">
-                            <a href="songs/08_For_Another_Day.mp3">For Another Day</a> <span class="song-time">(1:59)</span>
+                            <a class="song-title" href="javascript:openSongDetails(8);">For Another Day</a>
+                            <div class="song-details" data-song-num="8">
+                                <table>
+                                    <tr>
+                                        <td class="key">Length:</td>
+                                        <td class="value">1:59</td>
+                                    </tr>
+                                    <tr>
+                                        <td class="key">Recorded:</td>
+                                        <td class="value">2005</td>
+                                    </tr>
+                                    <tr>
+                                        <td class="key">Written by:</td>
+                                        <td class="value">Tyler Hayes</td>
+                                    </tr>
+                                    <tr>
+                                        <td class="key">Samples:</td>
+                                        <td class="value">
+                                            <ul class="samples-list">
+                                                <li><span class="sample-song-title">"Beautiful Way"</span> by Beck</li>
+                                            </ul>
+                                        </td>
+                                    </tr>
+                                </table>
+
+                                <div class="audio-controller">
+                                    <audio controls>
+                                        <source src="songs/08_For_Another_Day.mp3" type="audio/mpeg"/>
+                                    </audio>
+                                </div>
+                            </div>
                         </li>
                         <li class="song">
-                            <a href="songs/09_Why.mp3">Why</a> <span class="song-time">(4:27)</span>
+                            <a class="song-title" href="javascript:openSongDetails(9);">Why</a>
+                            <div class="song-details" data-song-num="9">
+                                <table>
+                                    <tr>
+                                        <td class="key">Length:</td>
+                                        <td class="value">4:28</td>
+                                    </tr>
+                                    <tr>
+                                        <td class="key">Recorded:</td>
+                                        <td class="value">2005</td>
+                                    </tr>
+                                    <tr>
+                                        <td class="key">Written by:</td>
+                                        <td class="value">Tyler Hayes</td>
+                                    </tr>
+                                    <tr>
+                                        <td class="key">Samples:</td>
+                                        <td class="value">
+                                            <ul class="samples-list">
+                                                <li><span class="sample-song-title">"I'm So Afraid" (live)</span> by Fleetwood Mac</li>
+                                            </ul>
+                                        </td>
+                                    </tr>
+                                </table>
+
+                                <div class="audio-controller">
+                                    <audio controls>
+                                        <source src="songs/09_Why.mp3" type="audio/mpeg"/>
+                                    </audio>
+                                </div>
+                            </div>
                         </li>
                         <li class="song">
-                            <a href="songs/10_Napoleon.mp3">Napoleon</a> <span class="song-time">(4:33)</span>
+                            <a class="song-title" href="javascript:openSongDetails(10);">Napoleon</a>
+                            <div class="song-details" data-song-num="10">
+                                <table>
+                                    <tr>
+                                        <td class="key">Length:</td>
+                                        <td class="value">4:33</td>
+                                    </tr>
+                                    <tr>
+                                        <td class="key">Recorded:</td>
+                                        <td class="value">2004</td>
+                                    </tr>
+                                    <tr>
+                                        <td class="key">Written by:</td>
+                                        <td class="value">Tyler Hayes</td>
+                                    </tr>
+                                    <tr>
+                                        <td class="key">Samples:</td>
+                                        <td class="value">
+                                            <ul class="samples-list">
+                                                <li><span class="sample-song-title">"Behind the Wall of Sleep"</span> by Black Sabbath</li>
+                                                <li><span class="sample-song-title">"Morroccan Peoples Revolutionary Bowls Club"</span> by Blur</li>
+                                                <li><span class="sample-song-title">"The Battle of Who Could Care Less"</span> by Ben Folds Five</li>
+                                                <li><span class="sample-song-title">"Magic Bus"</span> by The Who</li>
+                                            </ul>
+                                        </td>
+                                    </tr>
+                                </table>
+
+                                <div class="audio-controller">
+                                    <audio controls>
+                                        <source src="songs/10_Napoleon.mp3" type="audio/mpeg"/>
+                                    </audio>
+                                </div>
+                            </div>
                         </li>
                         <li class="song">
-                            <a href="songs/11_Missing_Something.mp3">Missing Something</a> <span class="song-time">(4:17)</span>
+                            <a class="song-title" href="javascript:openSongDetails(11);">Missing Something</a>
+                            <div class="song-details" data-song-num="11">
+                                <table>
+                                    <tr>
+                                        <td class="key">Length:</td>
+                                        <td class="value">4:18</td>
+                                    </tr>
+                                    <tr>
+                                        <td class="key">Recorded:</td>
+                                        <td class="value">2005</td>
+                                    </tr>
+                                    <tr>
+                                        <td class="key">Written by:</td>
+                                        <td class="value">Tyler Hayes/Aaron Trueb</td>
+                                    </tr>
+                                    <tr>
+                                        <td class="key">Samples:</td>
+                                        <td class="value">
+                                            <ul class="samples-list">
+                                                <li><span class="sample-song-title">"Sgt. Pepper's Lonely Hearts Club Band (reprise)"</span> by The Beatles</li>
+                                            </ul>
+                                        </td>
+                                    </tr>
+                                </table>
+
+                                <div class="audio-controller">
+                                    <audio controls>
+                                        <source src="songs/11_Missing_Something.mp3" type="audio/mpeg"/>
+                                    </audio>
+                                </div>
+                            </div>
                         </li>
                         <li class="song">
-                            <a href="songs/12_Spearhead.mp3">Spearhead</a> <span class="song-time">(3:40)</span>
+                            <a class="song-title" href="javascript:openSongDetails(12);">Spearhead</a>
+                            <div class="song-details" data-song-num="12">
+                                <table>
+                                    <tr>
+                                        <td class="key">Length:</td>
+                                        <td class="value">3:40</td>
+                                    </tr>
+                                    <tr>
+                                        <td class="key">Recorded:</td>
+                                        <td class="value">2003</td>
+                                    </tr>
+                                    <tr>
+                                        <td class="key">Written by:</td>
+                                        <td class="value">Tyler Hayes</td>
+                                    </tr>
+                                    <tr>
+                                        <td class="key">Samples:</td>
+                                        <td class="value">
+                                            <ul class="samples-list">
+                                                <li><span class="sample-song-title">"Ants Marching"</span> by Dave Matthews Band</li>
+                                                <li><span class="sample-song-title">"You're All I've Got Tonight"</span> by The Smashing Pumpkins</li>
+                                            </ul>
+                                        </td>
+                                    </tr>
+                                </table>
+
+                                <div class="audio-controller">
+                                    <audio controls>
+                                        <source src="songs/12_Spearhead.mp3" type="audio/mpeg"/>
+                                    </audio>
+                                </div>
+                            </div>
                         </li>
                         <li class="song">
-                            <a href="songs/13_Reverse.mp3">Reverse</a> <span class="song-time">(4:53)</span>
+                            <a class="song-title" href="javascript:openSongDetails(13);">Reverse</a>
+                            <div class="song-details" data-song-num="13">
+                                <table>
+                                    <tr>
+                                        <td class="key">Length:</td>
+                                        <td class="value">4:54</td>
+                                    </tr>
+                                    <tr>
+                                        <td class="key">Recorded:</td>
+                                        <td class="value">2001</td>
+                                    </tr>
+                                    <tr>
+                                        <td class="key">Written by:</td>
+                                        <td class="value">Tyler Hayes</td>
+                                    </tr>
+                                    <tr>
+                                        <td class="key">Samples:</td>
+                                        <td class="value">
+                                            <ul class="samples-list">
+                                                <li><span class="sample-song-title">"Scentless Apprentice"</span> by Nirvana</li>
+                                                <li><span class="sample-song-title">"Iscarabaid"</span> by Sunny Day Real Estate</li>
+                                                <li><span class="sample-song-title">"Special (Rickety Raw Mix)"</span> by Garbage</li>
+                                                <li><span class="sample-song-title">"Too Far Apart"</span> by Wilco</li>
+                                                <li><span class="sample-song-title">"Pyramid Song"</span> by Radiohead</li>
+                                            </ul>
+                                        </td>
+                                    </tr>
+                                </table>
+
+                                <div class="audio-controller">
+                                    <audio controls>
+                                        <source src="songs/13_Reverse.mp3" type="audio/mpeg"/>
+                                    </audio>
+                                </div>
+                            </div>
                         </li>
                         <li class="song">
-                            <a href="songs/14_The_Pig_Farmer_and_the_Sheep_Herder.mp3">The Pig Farmer and the Sheep Herder</a> <span class="song-time">(18:59)</span>
-                            <ol type="i">
-                                <li>A Father of Lies</li>
-                                <li>A Worm</li>
-                                <li>A Red Dragon</li>
-                                <li>A Fly to a Kill</li>
-                                <li>A Madman</li>
-                                <li>The Shepherd</li>
-                            </ol>
+                            <a class="song-title" href="javascript:openSongDetails(14);">The Pig Farmer and the Sheep Herder</a>
+                            <div class="song-details" data-song-num="14">
+                                <table>
+                                    <tr>
+                                        <td class="key">Parts:</td>
+                                        <td class="value">
+                                            <ol class="parts-list" type="i">
+                                                <li><span>A Father of Lies</span></li>
+                                                <li><span>A Worm</span></li>
+                                                <li><span>A Red Dragon</span></li>
+                                                <li><span>A Fly to a Kill</span></li>
+                                                <li><span>A Madman</span></li>
+                                                <li><span>The Shepherd</span></li>
+                                            </ol>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td class="key">Length:</td>
+                                        <td class="value">18:59</td>
+                                    </tr>
+                                    <tr>
+                                        <td class="key">Recorded:</td>
+                                        <td class="value">2005</td>
+                                    </tr>
+                                    <tr>
+                                        <td class="key">Written by:</td>
+                                        <td class="value">Tyler Hayes</td>
+                                    </tr>
+                                    <tr>
+                                        <td class="key">Samples:</td>
+                                        <td class="value">
+                                            <ul class="samples-list">
+                                                <li><span class="sample-song-title">"Clap Hands"</span> by Beck</li>
+                                                <li><span class="sample-song-title">"Maybe Angels"</span> by Sheryl Crow</li>
+                                                <li><span class="sample-song-title">"Sleep to Dream"</span> by Fiona Apple</li>
+                                                <li><span class="sample-song-title">"Chile"</span> by Toad the Wet Sprocket</li>
+                                                <li><span class="sample-song-title">"Caught a Lite Sneeze"</span> by Tori Amos</li>
+                                                <li><span class="sample-song-title">"Behind the Wall of Sleep"</span> by Black Sabbath</li>
+                                                <li><span class="sample-song-title">"Jesus is Carried Down"</span> by John Debny</li>
+                                                <li><span class="sample-song-title">"MC5"</span> by Stone Temple Pilots</li>
+                                                <li><span class="sample-song-title">"Murder by Numbers"</span> by The Police</li>
+                                                <li><span class="sample-song-title">"Pyramid Song"</span> by Radiohead</li>
+                                            </ul>
+                                        </td>
+                                    </tr>
+                                </table>
+
+                                <div class="audio-controller">
+                                    <audio controls>
+                                        <source src="songs/14_The_Pig_Farmer_and_the_Sheep_Herder.mp3" type="audio/mpeg"/>
+                                    </audio>
+                                </div>
+                            </div>
                         </li>
                     </ol>
                 </div>

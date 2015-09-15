@@ -118,3 +118,16 @@ a:hover {
     padding: 20px 0;
     width: 100%;
 }
+
+.sample-song-title {
+    font-style: italic;
+}
+
+.parts-list {
+    font-weight: bold;
+    padding-left: 0;
+}
+
+.parts-list span {
+    font-weight: normal;
+}
