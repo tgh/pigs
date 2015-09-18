@@ -10,6 +10,7 @@ body {
     margin: 20px 200px;
     overflow: hidden;
     min-width: 1000px;
+    border-radius: 20px;
 }
 
 #content-left {
