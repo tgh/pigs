@@ -3,6 +3,7 @@
         <link href='https://fonts.googleapis.com/css?family=Abril+Fatface' rel='stylesheet' type='text/css'>
         <title>Pigs in the Parlor (2005)</title>
         <link rel="stylesheet" type="text/css" href="css/pigs.css">
+        <link rel="stylesheet" type="text/css" href="css/lightbox.css">
         <script src="js/jquery-2.1.4.min.js"></script>
         <script src="js/pigs.js"></script>
     </head>
@@ -15,7 +16,7 @@
         </div>
         <div id="content-container">
             <div id="content-left">
-                <img id="cover-image" src="images/cover_small.jpg" width="250"/>
+                <a href="images/cover.jpg" data-lightbox="cover"><img id="cover-image" src="images/cover_small.jpg" width="250"/></a>
             </div>
 
             <div id="content-right">
@@ -788,5 +789,7 @@
                 </div>
             </div>
         </div>
+
+        <script src="js/lightbox.min.js"></script>
     </body>
 </html>
