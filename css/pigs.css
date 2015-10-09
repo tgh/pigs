@@ -1,8 +1,8 @@
 body {
-    /*background-image: url("../images/cover.jpg");
-    background-repeat: repeat;
-    background-size: 100%;*/
-    background-color: #902227;
+    background: -webkit-linear-gradient(#902227, black); /* For Safari 5.1 to 6.0 */
+    background: -o-linear-gradient(#902227, black); /* For Opera 11.1 to 12.0 */
+    background: -moz-linear-gradient(#902227, black); /* For Firefox 3.6 to 15 */
+    background: linear-gradient(#902227, black); /* Standard syntax */
     font-family: Arial, Helvetica, sans-serif;
 }
 
